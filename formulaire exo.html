@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire exo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>freecodecamp Survey Form</h2>
-    <br>
-    <h3>Thank you for taking the time to help us improve the platform</h3>
-    
+    <header class="head">
+        <h1 id="title">Galib Mahin Survey Form</h1>
+        <p id="description">Thank you for taking the time to help me improving my Developing</p>
+      </header>
+    <form id="survey-form">
+        <fieldset>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br>
+        <br>
+        <laber for="age">Age</laber><br>
+        <input type="number" id="age" placeholder="Age"><br>
+        <br>
+        <label for="which">Which option best describes your current role ?</label><br>
+        <select id="current role" name="current role">
+            <optgroup label="Select a role" placeholder="Select a role">
+                <option value>Select a role</option>
+                <option value>Select a role</option>
+                </optgroup>
+        </select><br>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" id="definitely" name="definitely">
+        <label for="definitely">Definitely</label><br>
+        <input type="radio" id="maybe" name="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="notsure" name="notsure">
+        <label for="notsure">Not sure</label><br>
+        <br>
+        <label for="what">What is your favorite feature of freeCodeCamp</label><br>
+        <select id="featureoption" name="featureoption" placeholder="">
+            <optgroup label="feature">
+                <option value>JavaScript</option>
+                <option value>HTML</option>
+                <option value>CSS</option>
+            </optgroup>
+        </select>
+        <p></p>
+
+    </form>
+
     
 </body>
 </html>
